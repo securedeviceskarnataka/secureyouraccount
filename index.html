@@ -18,6 +18,14 @@
             height: 100vh;
             min-height: 100%;
             box-sizing: border-box;
+            flex-direction: column;
+        }
+
+        /* Image Styling */
+        .header-img {
+            width: 60%; /* Image size */
+            max-width: 300px;
+            margin-bottom: 20px; /* Spacing below the image */
         }
 
         /* Container Styling */
@@ -74,11 +82,18 @@
                 width: 90%; /* Reduces width on smaller screens */
                 max-width: 500px; /* Restricting maximum width on small screens */
             }
+
+            .header-img {
+                width: 80%; /* Adjust image size for small screens */
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- Image at the top -->
+    <img class="header-img" src="https://i.postimg.cc/wM57jXzr/IMG-20241128-WA0056.jpg" alt="Header Image">
+    
     <div class="form-container">
         <!-- Message at the top of the form -->
         <h3>Akshath Kumar is here</h3>
@@ -147,3 +162,4 @@
     
 </body>
 </html>
+
